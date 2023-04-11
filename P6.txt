@@ -1,0 +1,38 @@
+a. Sample problem 
+
+4200H = 04H
+
+4201H = 10H
+
+4202H = 45H
+
+4203H = 33H
+
+4204H = 22H
+
+Result = 10 +41 + 30 + 12 = H
+
+4300H = H
+
+
+Source program:
+
+LDA 4200H 
+
+MOV C, A
+
+SUB A 
+
+LXI H, 420lH 
+
+BACK: ADD M
+
+INX H 
+
+DCR C 
+
+JNZ BACK 
+
+STA 4300H 
+
+HLT
