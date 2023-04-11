@@ -1,0 +1,43 @@
+Program - 5.a: Add two 16-bit numbers - Source Program 1
+
+Sample problem:
+
+(4000H) = 15H 
+
+(4001H) = 1CH
+
+(4002H) = B7H
+
+(4003H) = 5AH
+
+Result = 1C15 + 5AB7H = 76CCH
+
+(4004H) = CCH
+
+(4005H) = 76H
+
+Source Program 1:
+
+LHLD 4000H 
+
+XCHG 
+
+LHLD 4002H 
+
+MOV A, E 
+
+ADD L 
+
+MOV L, A 
+
+MOV A, D
+
+ADC H 
+
+MOV H, A 
+
+SHLD 4004H 
+
+4005H.
+
+HLT
