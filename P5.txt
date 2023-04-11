@@ -1,0 +1,12 @@
+8.Statement: Find the l's complement of the number stored at memory location 
+4400H and store the complemented number at memory location 4300H.
+
+Sample program:
+  (4040H)=55H
+  Result = 4300B = AAB
+
+Source program:
+   LDA 4400B
+   CMA 
+   STA 4300H
+   HLT
