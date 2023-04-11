@@ -1,0 +1,36 @@
+
+Program - 4: Subtract two 8-bit numbers
+
+Sample problem:
+   (4000H) =51H
+   (4001H) =19H
+   RESULT  =51H-19H=38H
+   
+Source program:
+   LXI H, 4000H
+   MOV A,M 
+   INX H 
+   SUB M 
+   INX H 
+   MOV M,A 
+   HLT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
