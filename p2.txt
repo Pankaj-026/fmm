@@ -1,3 +1,5 @@
+Add the contain of memory location 4001H and place the result in the memory 4002H and 4003H 
+
 
 Program - 4: Subtract two 8-bit numbers
 
