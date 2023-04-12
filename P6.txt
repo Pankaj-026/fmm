@@ -35,4 +35,36 @@ JNZ BACK
 
 STA 4300H 
 
+HLT 
+
+Source Program 2 ; 
+
+LDA 4200H
+
+MOV C, A
+
+ LXI H, 4201H
+
+SUB A
+
+MOV B, A
+
+BACK: ADD M
+
+JNC SKIP
+
+INR B
+
+SKIP: INX H
+
+DCR C
+
+JNZ BACK
+
+STA 4300H
+
+MOV A, B
+
+STA 4301H
+
 HLT
